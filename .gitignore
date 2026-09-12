@@ -1,0 +1,21 @@
+# Generados por opencode_go_to_aa.py
+opencode_go_models.txt
+aa_opencode_go_url*.txt
+aa_opencode_go_set*.json
+state.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Tests locales, no versionados
+tests/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
