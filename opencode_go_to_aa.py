@@ -1,6 +1,6 @@
 """Build an Artificial Analysis filter from the current Opencode Go model list.
 
-Fetches the Go lineup from the Opencode docs, matches every entry against
+Fetches the Go lineup from the opencode.ai/go page bundle, matches every entry against
 the full Artificial Analysis model manifest (AES-GCM encrypted on their
 site) and prints a shareable ``?models=`` URL plus a Model Set JSON file
 that can be saved through the Save/Load buttons in the AA model dropdown.
@@ -28,7 +28,7 @@ def main():
     parser.add_argument("--state", default="state.json")
     args = parser.parse_args()
 
-    # Read the current Go lineup from the Opencode docs.
+    # Read the current Go lineup from the opencode.ai/go page.
     go_names = fetch_go_models()
     print(f"Go models found: {len(go_names)}")
 

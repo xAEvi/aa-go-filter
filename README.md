@@ -32,6 +32,7 @@ The second run prints `Sin cambios.` If Go adds or removes models, you will see 
 | Symptom | Cause | What to do |
 |---|---|---|
 | `WARNING: 'X' has no match in AA yet.` | AA does not index that model yet (happened with `Hy4 preview`) | Normal. It gets reported, a slug is never made up. Re-run in a few days. |
+| `Go model list not found in any Go page bundle.` | Opencode changed the `/go` page | Check the `goModels` array in the `/_build/assets/*.js` bundles of `opencode.ai/go` and `src/go_source.py`. |
 | `Matched 0` or `No AA manifests found` | AA changed its frontend | Save the HTML of `artificialanalysis.ai/models` and check `src/aa_catalog.py`. |
 
 ## Tests
